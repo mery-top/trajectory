@@ -13,6 +13,8 @@ const app = express()
 
 const PORT = 8000
 
+// Route to the Login Page
+
 app.use('/', require("./routes/authRoutes"))
 
 
