@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    background-color: #121636;
+}
+
+
+* {
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+/* HOME */
+
+  .wrap{
+    margin-top: 90px;
+  }
+/* GET STARTED */
+  .get-started{
+    text-align: center;
+  }
+
+  .gradient-text {
+    font-size: 4rem; /* Adjust size as needed */
+    font-weight: bold;
+    font-style: normal;
+    background: linear-gradient(to right, #4e07dd,#4e07dd, #ee57ff, black); /* Gradient colors */
+    -webkit-background-clip: text; /* Clips gradient to text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
+  }
+
+  h1{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 100;
+  }
+  
+button{
+    border: 1px solid #ee57ff;;
+    border-radius: 90px;
+    text-decoration: none;
+    color: #4e07dd;
+    font-weight: 500;
+    padding: 9px;
+    margin: 20px;
+    background-color: #121636;
+    font-size: 10px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover a{
+    color: rgb(172, 172, 172);
+}
+
+/* FEATURES */
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    margin: 30px;
+    margin-bottom: 100px;
+}
+
+  .box {
+    background-color: rgba(238, 87, 255, 0.07);
+    backdrop-filter: blur(80px);
+    padding: 20px; 
+    height: 160px;
+    width: 200px;
+    color: white; /* Optional: Set text color */
+    font-size: 12px;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .box h1{
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .box p{
+    font-size: 10px;
+    font-weight: 300;
+  }
+  
+  
+  @media (max-width: 768px) {
+
+    .gradient-text{
+       font-size: 3rem;
+    }
+    button a{
+        font-size: 18px;
+        padding: 2px;
+    }
+
+    .main-box{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 170px;
+    }
+
+    .box h1{
+        font-size: 16px;
+    }
+
+    .box p{
+        font-size: 11px;
+    }
+
+    .box img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+ }
+
+ /* FEATURE IMAGES */
+ img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+ }
+
+ @media(min-width:1440px){
+    .gradient-text{
+        font-size: 10rem;
+    }
+
+    .get-started .path{
+        font-size: 2rem;
+    }
+ 
+     .main-box{
+         flex-direction: row;
+         gap: 50px;
+     }
+ 
+     .box{
+         width: 350px;
+         height: 300px;
+     }
+     .box h1{
+        font-size: 25px;
+     }
+
+     .box p{
+        font-size: 20px;
+     }
+
+     .box img{
+        width: 200px;
+        height: 200px;
+     }
+
+     button a{
+        font-size: 20px;
+        padding: 5px;
+     }
+ }
+
+ footer{
+    width: 100%;
+    background-color: #ee57ff;
+    text-align: center;
+ }
+
+ footer h1{
+    padding: 20px;
+ }
+
+ /* LOGIN BOX */
+
+ .log{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+  width: 100%;
+
+ }
+
+ .log-box{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b29bdf;
+  border-radius: 30px;
+ }
+
+ .log-form{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .log-form label, p{
+  color: gray;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  padding: 5px;
+ }
+
+ .log-form a{
+  text-decoration: none;
+  color: #4e07dd;
+ }
+
+ input{
+  background-color: #121636;
+  border:1px solid #ee57ff;
+  border-radius: 20px;
+  padding: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 10px;
+  color: #b29bdf;
+ }
+
+
+.log-box button:hover{
+  color: gainsboro;
+}
+
+.log-box img{
+  all: unset;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.log-box h1{
+  font-size: large;
+  font-weight: medium;
+}
+
+.log-main footer{
+  bottom: 0px;
+}
