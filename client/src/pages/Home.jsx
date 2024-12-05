@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import f1 from '../assets/1f.png';
 import f2 from '../assets/2f.png';
 import f3 from '../assets/3f.png'; // Adjust the path if necessary
-
+import axios from 'axios';
 
 
 export default function Home() {
